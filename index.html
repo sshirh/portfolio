@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spencer Shirah — Portfolio & Resume</title>
+  <meta name="description" content="Spencer Shirah — Auburn University Computer Science | Cybersecurity, Digital Forensics, Systems">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          auburnBlue:  '#0C2340',   // Official Auburn Blue
+          auburnOrange:'#E87722',   // Official Auburn Orange
+          ink:         '#0F172A',   // deep slate for text
+          paper:       '#FFFFFF',
+          mist:        '#F8FAFC',   // very light section
+          cloud:       '#F1F5F9'    // light section alt
+        },
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+          mono: ['Roboto Mono','ui-monospace','SFMono-Regular','Menlo','monospace']
+        }
+      }
+    }
+  }
+</script>
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Glow accent utility */
+    .glow { box-shadow: 0 0 30px rgba(0,173,181,0.25); }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans">
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-auburnBlue/10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#" class="font-display text-xl tracking-tight text-auburnBlue">
+      Spencer <span class="text-auburnOrange">Shirah</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#about"   class="text-ink/80 hover:text-auburnBlue">About</a>
+      <a href="#projects" class="text-ink/80 hover:text-auburnBlue">Projects</a>
+      <a href="#resume"  class="text-ink/80 hover:text-auburnBlue">Resume</a>
+      <a href="#contact" class="text-ink/80 hover:text-auburnBlue">Contact</a>
+    </nav>
+    <a href="#contact" class="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-auburnOrange text-white hover:opacity-90">
+      Contact
+    </a>
+  </div>
+</header>
+
+
+<!-- ABOUT / HERO SECTION -->
+<section id="about" class="relative bg-cover bg-center" style="background-image: url('assets/background.jpg');">
+  <!-- Optional overlay for darker overall tone -->
+  <div class="absolute inset-0 bg-[#0B132B]/40"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 pt-14 pb-10 md:pt-24 md:pb-16 grid md:grid-cols-2 gap-10 items-center">
+    <!-- LEFT: Text Block -->
+    <div class="relative">
+      <!-- Background layer behind text -->
+      <div class="absolute inset-0 bg-[#0B132B]/75 rounded-2xl backdrop-blur-sm border border-white/10"></div>
+
+      <!-- Foreground text -->
+      <div class="relative p-6 rounded-2xl">
+        <h1 class="font-display text-4xl md:text-5xl font-extrabold leading-tight">
+  <span class="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">Building Secure Systems.</span><br>
+  <span class="text-auburnOrange drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">Breaking Boundaries.</span>
+</h1>
+
+
+        <p class="mt-5 text-lg text-white/80">
+          Hi, I’m <span class="font-semibold">Spencer Shirah</span> — a Software Engineering student at
+          Auburn University passionate about software engineering, cybersecurity, and system design.
+          I love building secure systems, exploring software, and solving real-world tech challenges
+          through creative engineering.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+  <a href="assets/Spencer_Shirah_Resume.pdf"
+     class="px-5 py-2.5 rounded-lg bg-auburnOrange text-white font-medium shadow-md hover:bg-[#C75B1C] hover:shadow-lg transition"
+     download>Download Resume</a>
+
+  <a href="#projects"
+     class="px-5 py-2.5 rounded-lg bg-white text-auburnBlue font-medium shadow-md hover:bg-auburnBlue hover:text-white hover:shadow-lg transition">
+     View Projects
+  </a>
+
+  <div class="flex items-center gap-3 ml-1">
+    <a href="https://github.com/sshirh" target="_blank" rel="noopener" class="text-white/90 hover:text-auburnOrange transition">
+      <!-- GitHub icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 10 8.2 11.6.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.3 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.7.1-3.6 0 0 1-.3 3.4 1.3a11.5 11.5 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.7 1.9.2 3.3.1 3.6.8.9 1.3 2.1 1.3 3.4 0 4.9-2.9 5.9-5.7 6.3.5.5.8 1.2.8 2.4v3.6c0 .3.2.7.8.6A12.3 12.3 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/spencer-shirah/" target="_blank" rel="noopener" class="text-white/90 hover:text-auburnOrange transition">
+      <!-- LinkedIn icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56V14.8c0-1.34 0-3.06-1.87-3.06-1.88 0-2.17 1.47-2.17 2.97v5.74H9.29V9.75h3.42v1.47h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.34 2.41 4.34 5.54v5.54zM5.34 8.28a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.56V9.75H3.56v10.7z"/></svg>
+    </a>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Portrait Card -->
+    <div class="relative">
+  <!-- glowing accent -->
+  <div class="absolute inset-0 -z-10 blur-3xl opacity-20" style="background: radial-gradient(600px circle at 30% 20%, #00ADB5 0, transparent 75%);"></div>
+
+  <!-- semi-opaque background behind the profile info -->
+  <div class="relative bg-[#0B132B]/75 backdrop-blur-sm border border-white/10 rounded-2xl p-6 glow">
+    <img src="assets/pfp.jpg" alt="Spencer Shirah portrait" class="rounded-xl w-full h-auto object-contain bg-[#0B132B]">
+    <div class="mt-4 text-sm text-white/80">
+      <p><span class="font-semibold">Location:</span> Auburn, AL</p>
+      <p><span class="font-semibold">Interests:</span> Software Engineering, Cyber Security</p>
+      <p><span class="font-semibold">Clubs:</span> Ethical Hacking Club, Auburn CyberForce, Chi Phi Mu Delta</p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="bg-paper border-t border-auburnBlue/10">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-auburnBlue">Projects</h2>
+      <div class="text-sm text-ink/60">Source: <code class="font-mono">/data/projects.json</code></div>
+    </div>
+    <div id="project-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <!-- AI PHONE RECEPTIONIST PROJECT -->
+<section id="ai-receptionist" class="mt-16">
+  <div class="bg-white border border-auburnBlue/10 rounded-2xl overflow-hidden shadow-sm">
+
+    <!-- Header -->
+    <div class="px-6 py-5 border-b border-auburnBlue/10 bg-cloud">
+      <h3 class="font-display text-2xl md:text-3xl font-bold text-auburnBlue">
+        UPS Store AI Phone Receptionist
+      </h3>
+      <p class="text-ink/70 mt-2">
+        A production-ready AI-powered phone receptionist designed for a UPS Store–style retail environment.
+        This system answers real phone calls, understands natural speech, and responds with accurate,
+        business-aware information while maintaining a natural conversational flow.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="https://github.com/sshirh/ups-ai-receptionist"
+           target="_blank" rel="noopener"
+           class="px-4 py-2 rounded-lg bg-auburnOrange text-white hover:opacity-90">
+          View Source
+        </a>
+      </div>
+    </div>
+    <!-- DEMO VIDEO -->
+<div class="px-6 py-6 bg-white border-b border-auburnBlue/10">
+  <h4 class="font-semibold text-auburnBlue text-lg mb-3">
+    Live Demo — AI Phone Receptionist
+  </h4>
+
+  <div class="rounded-xl overflow-hidden border border-auburnBlue/10 shadow-sm">
+    <div class="rounded-xl overflow-hidden border border-auburnBlue/10 shadow-sm aspect-video">
+  <iframe
+    class="w-full h-full"
+    src="https://www.youtube.com/embed/ljkol6LySXI?si=bSHLK1pxoTsIp9FG"
+    title="AI Phone Receptionist Demo"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+  </div>
+
+  <p class="text-sm text-ink/70 mt-3">
+    Demo showing a real inbound call, speech recognition, intent classification,
+    and real-time responses with graceful handoff behavior.
+  </p>
+</div>
+
+    <!-- Content -->
+    <div class="p-6 grid lg:grid-cols-2 gap-6">
+
+      <!-- LEFT COLUMN -->
+      <div class="bg-mist rounded-xl border border-auburnBlue/10 p-5">
+        <h4 class="font-semibold text-auburnBlue text-lg mb-3">Features</h4>
+        <ul class="list-disc pl-5 space-y-2 text-ink/80">
+          <li>Natural-language voice interaction using Twilio Speech Recognition</li>
+          <li>Intelligent intent routing with OpenAI</li>
+          <li>Date-aware store hours (today, tomorrow, weekends, holidays)</li>
+          <li>Human handoff with live dialing during business hours</li>
+          <li>Graceful handling of after-hours calls</li>
+          <li>Professional conversational flow with confirmations and follow-ups</li>
+          <li>Safe handling of UPS tracking requests without collecting sensitive data</li>
+          <li>Clean fail-safes to prevent dropped or silent calls</li>
+        </ul>
+
+        <h4 class="font-semibold text-auburnBlue text-lg mt-6 mb-3">
+          Supported Caller Requests
+        </h4>
+        <ul class="list-disc pl-5 space-y-2 text-ink/80">
+          <li>Store hours (“When do you close tomorrow?”)</li>
+          <li>Location and directions</li>
+          <li>Notary services</li>
+          <li>Amazon returns</li>
+          <li>Printing and copying services</li>
+          <li>Packing and shipping services</li>
+          <li>Mailbox services</li>
+          <li>Package tracking guidance</li>
+          <li>Speak to a representative</li>
+          <li>End call / goodbye phrases</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="bg-mist rounded-xl border border-auburnBlue/10 p-5">
+        <h4 class="font-semibold text-auburnBlue text-lg mb-3">Technical Stack</h4>
+        <ul class="list-disc pl-5 space-y-2 text-ink/80">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Twilio Programmable Voice</li>
+          <li>OpenAI API</li>
+          <li>Luxon (timezone-safe date handling)</li>
+          <li>chrono-node (natural language date parsing)</li>
+        </ul>
+
+        <h4 class="font-semibold text-auburnBlue text-lg mt-6 mb-3">
+          Call Flow Overview
+        </h4>
+        <ol class="list-decimal pl-5 space-y-2 text-ink/80">
+          <li>Caller dials the store number</li>
+          <li>AI receptionist greets the caller</li>
+          <li>Speech is captured and transcribed by Twilio</li>
+          <li>Intent is classified using keyword routing, then OpenAI if needed</li>
+          <li>Context-aware response is generated</li>
+          <li>Caller is prompted or connected to a representative</li>
+          <li>Call ends cleanly on goodbye</li>
+        </ol>
+
+        <h4 class="font-semibold text-auburnBlue text-lg mt-6 mb-3">
+          Safety & Privacy
+        </h4>
+        <ul class="list-disc pl-5 space-y-2 text-ink/80">
+          <li>No tracking numbers are stored or logged</li>
+          <li>Callers are directed to official UPS tracking</li>
+          <li>Secrets stored in environment variables</li>
+          <li><code class="font-mono">.env</code> excluded from version control</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="px-6 pb-6">
+      <h4 class="font-semibold text-auburnBlue text-lg mb-3">Local Development</h4>
+      <div class="bg-white rounded-xl border border-auburnBlue/10 p-4 overflow-auto">
+        <pre class="text-sm text-ink/80"><code>npm install
+node server.js</code></pre>
+      </div>
+
+      <div class="mt-4 flex items-center gap-3">
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-auburnBlue/10 text-auburnBlue text-sm">
+          v1.0.0 — Production-ready conversational core
+        </span>
+        <span class="text-ink/60 text-sm">Author: Spencer Shirah</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- PASSWORD MANAGER PROJECT -->
+<div id="password-manager" class="mt-16">
+  <div class="bg-white border border-auburnBlue/10 rounded-2xl overflow-hidden shadow-sm">
+    <!-- Project header -->
+    <div class="px-6 py-4 border-b border-auburnBlue/10 bg-cloud">
+      <h3 class="font-display text-2xl font-bold text-auburnBlue">Password Manager Encryption Demo</h3>
+      <p class="text-ink/70 mt-1">Secure credential storage with AES-256 encryption and dynamic key generation.</p>
+    </div>
+
+    <!-- Media area -->
+    <div class="p-6 grid lg:grid-cols-2 gap-6 items-center">
+      <div class="flex flex-col gap-4">
+        <img src="assets/demo1.svg" alt="Password Manager Demo" class="rounded-lg border border-auburnBlue/10 shadow-sm">
+        <figcaption class="text-sm text-ink/70 text-center">Interactive SVG workflow demo of password vault encryption.</figcaption>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <img src="assets/encryption-screenshot.png" alt="Encryption Screenshot" class="rounded-lg border border-auburnBlue/10 shadow-sm">
+        <figcaption class="text-sm text-ink/70 text-center">Screenshot showing ciphertext generation and key handling.</figcaption>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="px-6 pb-6 text-ink/80 text-sm leading-relaxed">
+      <p>
+        This password manager project demonstrates secure password storage using AES-256 in GCM mode with per-user salts.
+        The demo visualizes how plaintext credentials are encrypted into ciphertext and safely stored.
+      </p>
+     <div class="mt-3 flex gap-3">
+  <a href="https://github.com/sshirh/secure-password-manager"
+     target="_blank" rel="noopener"
+     class="px-4 py-2 rounded-lg bg-auburnOrange text-white hover:opacity-90">
+     View Source
+  </a>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+  <!-- Resume -->
+  <section id="resume" class="bg-cloud border-t border-auburnBlue/10">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10">
+    <div>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-auburnBlue mb-4">Resume</h2>
+      <p class="text-ink/80">View or download the latest copy of my resume. This on-page version mirrors the PDF for quick scanning.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="assets/Spencer_Shirah_Resume.pdf"
+           class="px-4 py-2 rounded-lg bg-auburnOrange text-white hover:opacity-90"
+           download>Download PDF</a>
+        <a href="assets/Spencer_Shirah_Resume.pdf"
+           class="px-4 py-2 rounded-lg border border-auburnBlue/20 text-auburnBlue hover:border-auburnBlue hover:bg-auburnBlue/5"
+           target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+    </div>
+    <div class="bg-white border border-auburnBlue/10 rounded-xl p-4 h-[420px] overflow-hidden shadow-sm">
+      <iframe src="assets/Spencer_Shirah_Resume.pdf" class="w-full h-full rounded"></iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="bg-paper border-t border-auburnBlue/10">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="font-display text-3xl md:text-4xl font-bold text-auburnBlue mb-6">Contact</h2>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <form class="bg-white border border-auburnBlue/10 rounded-2xl p-6 shadow-sm"
+            action="https://formsubmit.co/REPLACE_ME@example.com" method="POST">
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm mb-1 text-ink/80">Name</label>
+            <input name="name" required
+              class="w-full px-3 py-2 rounded border border-auburnBlue/20 focus:outline-none focus:ring-2 focus:ring-auburnBlue/40"
+              placeholder="Your name">
+          </div>
+          <div>
+            <label class="block text-sm mb-1 text-ink/80">Email</label>
+            <input type="email" name="email" required
+              class="w-full px-3 py-2 rounded border border-auburnBlue/20 focus:outline-none focus:ring-2 focus:ring-auburnBlue/40"
+              placeholder="you@company.com">
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label class="block text-sm mb-1 text-ink/80">Message</label>
+          <textarea name="message" rows="5" required
+            class="w-full px-3 py-2 rounded border border-auburnBlue/20 focus:outline-none focus:ring-2 focus:ring-auburnBlue/40"
+            placeholder="How can I help?"></textarea>
+        </div>
+
+        <button class="mt-5 px-4 py-2 rounded-lg bg-auburnOrange text-white hover:opacity-90">Send Message</button>
+        <p class="text-xs text-ink/60 mt-3">
+          Deploying on Netlify? Replace the form tag with <code class="font-mono">data-netlify="true"</code> and remove the
+          <code class="font-mono">action</code> attribute.
+        </p>
+      </form>
+
+      <div class="bg-white border border-auburnBlue/10 rounded-2xl p-6 shadow-sm">
+        <h3 class="font-semibold text-xl text-auburnBlue mb-3">Connect</h3>
+        <ul class="space-y-2 text-ink/80">
+          <li>LinkedIn: <a class="text-auburnBlue hover:text-auburnOrange" href="https://www.linkedin.com/in/spencer-shirah/" target="_blank" rel="noopener">linkedin.com/in/spencer-shirah</a></li>
+          <li>GitHub: <a class="text-auburnBlue hover:text-auburnOrange" href="https://github.com/sshirh" target="_blank" rel="noopener">github.com/sshirh</a></li>
+          <li>Email: <a class="text-auburnBlue hover:text-auburnOrange" href="mailto:sms0195@auburn.edu">sms0195@auburn.edu</a></li>
+        </ul>
+        <div class="mt-6 text-sm text-ink/70">
+          Auburn clubs & activities: Ethical Hacking Club, Auburn CyberForce, Chi Phi Mu Delta.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="bg-auburnBlue text-white">
+  <div class="max-w-6xl mx-auto px-4 py-10 text-xs flex flex-wrap items-center justify-between gap-3">
+    <div>&copy; <span id="year"></span> Spencer Shirah. All rights reserved.</div>
+    <div class="opacity-80">Theme: Auburn Blue &amp; Auburn Orange</div>
+  </div>
+</footer>
+
+
+  <script src="js/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
